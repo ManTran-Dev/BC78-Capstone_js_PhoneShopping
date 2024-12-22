@@ -22,7 +22,9 @@
     <div class="container">
       <header class="display-4 my-4 d-flex justify-content-between">
         Cyber Phone
-        <button class="btn btn-secondary" onclick="switchToUserInterface()">Switch to User Interface</button>
+        <button class="btn btn-secondary" onclick="switchToUserInterface()">
+          Switch to User Interface
+        </button>
       </header>
       <!-- Phan tab menu -->
       <ul class="nav nav-tabs" role="tablist">
@@ -79,8 +81,15 @@
           <div class="tblSanPham" id="tblSanPham">
             <!-- BEGIN TABLE SẢN PHẨM -->
             <div class="d-flex justify-content-end mb-2">
-              <button class="btn btn-primary mr-2" onclick="sortProducts('asc')">Sort Asc</button>
-              <button class="btn btn-primary" onclick="sortProducts('desc')">Sort Desc</button>
+              <button
+                class="btn btn-primary mr-2"
+                onclick="sortProducts('asc')"
+              >
+                Sort Asc
+              </button>
+              <button class="btn btn-primary" onclick="sortProducts('desc')">
+                Sort Desc
+              </button>
             </div>
             <table class="table table-bordered">
               <thead>
@@ -126,7 +135,9 @@
                   class="form-control"
                   placeholder="Nhập vào tên sản phẩm"
                 />
-                <p id="TenSPError" class="text-danger" style="display: none;">Tên sản phẩm không hợp lệ!</p>
+                <p id="TenSPError" class="text-danger" style="display: none">
+                  Tên sản phẩm không hợp lệ!
+                </p>
               </div>
               <div class="form-group">
                 <label>Giá</label>
@@ -135,7 +146,9 @@
                   class="form-control"
                   placeholder="Nhập vào giá"
                 />
-                <p id="GiaSPError" class="text-danger" style="display: none;">Giá không hợp lệ!</p>
+                <p id="GiaSPError" class="text-danger" style="display: none">
+                  Giá không hợp lệ!
+                </p>
               </div>
               <div class="form-group">
                 <label>Màn Hình</label>
@@ -144,7 +157,13 @@
                   class="form-control"
                   placeholder="Nhập vào màn hình"
                 />
-                <p id="ManHinhSPError" class="text-danger" style="display: none;">Màn hình không hợp lệ!</p>
+                <p
+                  id="ManHinhSPError"
+                  class="text-danger"
+                  style="display: none"
+                >
+                  Màn hình không hợp lệ!
+                </p>
               </div>
               <div class="form-group">
                 <label>Camera Sau</label>
@@ -153,7 +172,13 @@
                   class="form-control"
                   placeholder="Nhập vào camera sau"
                 />
-                <p id="CameraSauSPError" class="text-danger" style="display: none;">Camera sau không hợp lệ!</p>
+                <p
+                  id="CameraSauSPError"
+                  class="text-danger"
+                  style="display: none"
+                >
+                  Camera sau không hợp lệ!
+                </p>
               </div>
               <div class="form-group">
                 <label>Camera Trước</label>
@@ -162,7 +187,13 @@
                   class="form-control"
                   placeholder="Nhập vào camera trước"
                 />
-                <p id="CameraTruocSPError" class="text-danger" style="display: none;">Camera trước không hợp lệ!</p>
+                <p
+                  id="CameraTruocSPError"
+                  class="text-danger"
+                  style="display: none"
+                >
+                  Camera trước không hợp lệ!
+                </p>
               </div>
               <div class="form-group">
                 <label>Hình Ảnh</label>
@@ -171,12 +202,16 @@
                   class="form-control"
                   placeholder="Nhập vào hình sản phẩm"
                 />
-                <p id="HinhSPError" class="text-danger" style="display: none;">Hình ảnh không hợp lệ!</p>
+                <p id="HinhSPError" class="text-danger" style="display: none">
+                  Hình ảnh không hợp lệ!
+                </p>
               </div>
               <div class="form-group">
                 <label for="">Mô tả: </label>
                 <textarea name="" id="MoTa" class="form-control"></textarea>
-                <p id="MoTaError" class="text-danger" style="display: none;">Mô tả không hợp lệ!</p>
+                <p id="MoTaError" class="text-danger" style="display: none">
+                  Mô tả không hợp lệ!
+                </p>
               </div>
               <div class="form-group">
                 <label>Loại</label>
@@ -184,7 +219,9 @@
                   <option value="Samsung">Samsung</option>
                   <option value="Iphone">Iphone</option>
                 </select>
-                <p id="LoaiSPError" class="text-danger" style="display: none;">Loại không hợp lệ!</p>
+                <p id="LoaiSPError" class="text-danger" style="display: none">
+                  Loại không hợp lệ!
+                </p>
               </div>
             </div>
             <!-- Modal footer -->
@@ -230,7 +267,7 @@
     <script type="module" src="./../controllers/main.js"></script>
     <script>
       function switchToUserInterface() {
-        window.location.href = './../../../User/index.html';
+        window.location.href = "./../../../User/index.html";
       }
     </script>
   </body>
